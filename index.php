@@ -1,11 +1,11 @@
 <?php
 
-if(isset($_POST['enviar'])){
+//if(isset($_POST['enviar'])){
 require 'PHPMailer.php';
 require 'SMTP.php';
 require 'Exception.php';
 require 'OAuth.php';
-
+echo 'Hola';
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
 $mail->isSMTP();
@@ -37,5 +37,5 @@ else
 {
 	echo "E-Mail enviado";
 }
-}
+//}
 ?>
